@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fill out the form below</h1>
+      <div>
+        <form id="formOne">
+          <label for="beverage">Choose your favorite beverage!</label>
+          <select class="form-group" id="beverage">
+            <option class="form-control">Coffee</option>
+            <option class="form-control">Tea</option>
+            <option class="form-control">Kombucha</option>
+            <option class="form-control">Water</option>
+          </select>
+
+          <label for="music">Choose your favorite genre!</label>
+          <select class="form-group" id="music">
+            <option class="form-control">Rock</option>
+            <option class="form-control">Blues</option>
+            <option class="form-control">Jazz</option>
+            <option class="form-control">Classical</option>
+          </select>
+
+          <label for="icecream">Choose your favorite flavor ice cream </label>
+          <div class="radio" id="icecream">
+            <label>
+              <input type="radio" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+
+      </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <div id="endForm">
+        <h2>Your form has been processed.</h2>
+        <h5><span class="beverage"></span></h5>
+        <h5><span class="music"></span></h5>
+        <h5><span class="icecream"></span></h5>
+
+      </div>
+    </div>
+  </body>
+</html>
